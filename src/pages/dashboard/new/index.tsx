@@ -149,8 +149,11 @@ export function New() {
 
       <div className="w-full bg-white p-3 rounded-lg flex flex-col sm:flex-row items-center gap-2">
         <button className="border-2 w-48 rounded-lg flex items-center justify-center cursor-pointer border-gray-600 h-32 md:w-48">
-          <div className="absolute cursor-pointer" >
-            <FiUpload size={30} color="#000" />
+          <div className="absolute cursor-pointer">
+            <FiUpload
+              size={30}
+              color="#000"
+            />
           </div>
           <div className="cursor-pointer">
             <input
@@ -163,10 +166,19 @@ export function New() {
           </div>
         </button>
 
-        {carImages.map(item => (
-          <div key={item.name} className="w-full h-32 flex items-center justify-center relative">
-            <button className="absolute" onClick={() => handleDeleteImage(item)} >
-              <FiTrash size={28} color="#fff" />
+        {carImages.map((item) => (
+          <div
+            key={item.name}
+            className="w-full h-32 flex items-center justify-center relative"
+          >
+            <button
+              className="absolute"
+              onClick={() => handleDeleteImage(item)}
+            >
+              <FiTrash
+                size={28}
+                color="#fff"
+              />
             </button>
             <img
               src={item.previewUrl}
@@ -200,7 +212,7 @@ export function New() {
               register={register}
               name="model"
               error={errors.model?.message}
-              placeholder="Ex: Onix 1.0..."
+              placeholder="Ex: 1.0 flex turbo..."
             />
           </div>
 
@@ -226,7 +238,6 @@ export function New() {
                 placeholder="Ex: 23.000 Km..."
               />
             </div>
-
           </div>
 
           <div className="flex w-full mb-3 flex-row items-center gap-4">
@@ -251,7 +262,6 @@ export function New() {
                 placeholder="Ex: Goiania - GO"
               />
             </div>
-
           </div>
 
           <div className="mb-3">
@@ -274,15 +284,19 @@ export function New() {
               id="description"
               placeholder="Digite a descrição sobre o carro... "
             />
-            {errors.description && <p className="mb-1 text-red-500" >{errors.description.message}</p>}
+            {errors.description && (
+              <p className="mb-1 text-red-500">{errors.description.message}</p>
+            )}
           </div>
 
-          <button type="submit" className="rounded-md bg-zinc-900 w-full text-white font-medium h-10">
+          <button
+            type="submit"
+            className="rounded-md bg-zinc-900 w-full text-white font-medium h-10"
+          >
             Cadastrar
           </button>
-
         </form>
       </div>
     </Container>
-  )
+  );
 }
