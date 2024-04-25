@@ -7,7 +7,7 @@ Copy code
 
 ## Visão Geral
 
-O **WebCarros** é um inovador site de compra e venda de veículos, desenvolvido com ReactJS, Tailwind CSS e Firebase. Proporciona uma experiência eficiente e intuitiva aos usuários, permitindo anunciar carros à venda e encontrar oportunidades de compra.
+O **WebCarros** é site de compra e venda de veículos, desenvolvido com ReactJS, Tailwind CSS e Firebase. Proporciona uma experiência eficiente e intuitiva aos usuários, permitindo anunciar carros à venda e encontrar oportunidades de compra.
 
 ## Funcionalidades Principais
 
