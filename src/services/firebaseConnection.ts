@@ -5,12 +5,12 @@ import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAjwyoIwvjbWonq6f83okeCj718CrkD1pg",
-  authDomain: "webcarros-d1ff1.firebaseapp.com",
-  projectId: "webcarros-d1ff1",
-  storageBucket: "webcarros-d1ff1.appspot.com",
-  messagingSenderId: "568225406544",
-  appId: "1:568225406544:web:3162d930edcf7a42bf3b55"
+  apiKey: "AIzaSyDyXLM2YpHuHdEyg-hCM0inu0JIck1I5FM",
+  authDomain: "webcarros-ae0d5.firebaseapp.com",
+  projectId: "webcarros-ae0d5",
+  storageBucket: "webcarros-ae0d5.appspot.com",
+  messagingSenderId: "537639633322",
+  appId: "1:537639633322:web:54a5ac561b849bd8b0abd3",
 };
 
 // Initialize Firebase
